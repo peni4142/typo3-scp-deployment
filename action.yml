@@ -22,3 +22,8 @@ runs:
   - name: make it runable
     shell: bash
     run: node complex-copy.js
+
+  - name: echo a variable
+    shell: bash
+    run: echo ${{inputs.user_name}}
+
