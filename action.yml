@@ -17,13 +17,7 @@ inputs:
 
 runs:
   using: "composite"
-  jobs:
-    deploy:
-      runs-on: ubuntu-latest
-      env:
-        CI: false
-
-      steps:
-      - name: make it runable
-        working-directory: ./
-        run: echo "Hello, World!"
+  steps:
+  - name: make it runable
+    working-directory: ./
+    run: echo "Hello, World!"
