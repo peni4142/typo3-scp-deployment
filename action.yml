@@ -19,9 +19,15 @@ runs:
   using: "composite"
   steps:
 
+  - name: 'Checkout: local'
+    uses: actions/checkout@v3
+    with:
+      repository: peni4142/typo3-scp-deployment@main
+      path: 'template'
+
   - name: create deployment
     shell: bash
-    run: node complex-copy.js
+    run: node ./template/complex-copy.js
 
   - name: deploy extension to production server
     uses:  appleboy/scp-action@master
