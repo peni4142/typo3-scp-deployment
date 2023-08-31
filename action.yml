@@ -19,6 +19,9 @@ runs:
   using: "composite"
   steps:
 
+  - name: 'Checkout: actions'
+    uses: actions/checkout@v3
+
   - name: 'Checkout: local'
     uses: actions/checkout@v3
     with:
@@ -29,10 +32,6 @@ runs:
   - name: create deployment
     shell: bash
     run: node ./template/complex-copy.js
-
-  - name: echo variable
-    shell: bash
-    run: echo ${{ inputs.target_path }} 
 
   - name: copy extension to production server
     uses:  appleboy/scp-action@master
