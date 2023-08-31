@@ -22,8 +22,9 @@ runs:
   - name: 'Checkout: local'
     uses: actions/checkout@v3
     with:
-      repository: peni4142/typo3-scp-deployment@main
+      repository: peni4142/typo3-scp-deployment
       path: 'template'
+      ref: 'main'
 
   - name: create deployment
     shell: bash
