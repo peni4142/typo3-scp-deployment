@@ -29,6 +29,10 @@ runs:
     shell: bash
     run: node ./template/complex-copy.js
 
+  - name: echo variable
+    shell: bash
+    run: echo ${{ inputs.target_path }} 
+
   - name: copy extension to production server
     uses:  appleboy/scp-action@master
     with:
