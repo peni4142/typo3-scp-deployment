@@ -1,11 +1,15 @@
 # typo3-scp-deployment
 
-These extensions is wrapping the SCP action of appleboy for TYPO3 extensions. https://github.com/appleboy/scp-action@master
+These extensions is wrapping the SCP action of appleboy for TYPO3 extensions. https://github.com/appleboy/scp-action
 
-This action is for TYPO3 extensions. This action copy the whole extension
+It only works for linux.
+
+
+This action is for TYPO3 extensions. This action copy the whole repo except the .git and .github directories to the speciefied path. So the eextension root path should also be the repository root path. What basically was my use-case for this extension.
 
 ## Example how to use
 
+`.github/workflow/[filename].yml`
 ```
 name: Typo3_Extension
 
