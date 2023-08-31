@@ -12,6 +12,8 @@ jobs:
     env:
       CI: false
 
+    steps:
+
     - name: deploy extension to production server
       uses:  peni4142/typo3-scp-deployment@main
       with:
