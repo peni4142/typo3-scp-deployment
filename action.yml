@@ -18,6 +18,10 @@ inputs:
 runs:
   using: "composite"
   steps:
+
+  - name: install bash
+    uses: actions/checkout@v3
+
   - name: make it runable
     working-directory: ./
     run: echo "Hello, World!"
