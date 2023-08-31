@@ -1,0 +1,22 @@
+name: Typo3_Extension
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CI: false
+
+    steps:
+    - name: deploy extension to production server
+      uses:  appleboy/scp-action@master
+      with:
+        host: "Hello, World!"
+        target_path: "Hello, World!"
+        user_name: "Hello, World!"
+        user_password: "Hello, World!"
