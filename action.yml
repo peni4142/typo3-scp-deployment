@@ -19,11 +19,7 @@ runs:
   using: "composite"
   steps:
 
-  - name: make it runable
-    shell: bash
-    run: node complex-copy.js
-
-  - name: make it runable
+  - name: create deployment
     shell: bash
     run: node complex-copy.js
 

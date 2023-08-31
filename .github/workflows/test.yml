@@ -13,6 +13,8 @@ jobs:
       CI: false
 
     steps:
+    - name: install bash
+      uses: actions/checkout@v3
 
     - name: deploy extension to production server
       uses:  peni4142/typo3-scp-deployment@main
