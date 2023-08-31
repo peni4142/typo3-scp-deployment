@@ -21,4 +21,4 @@ runs:
 
   - name: make it runable
     shell: bash
-    run: echo "Hello, World!"
+    run: node complex-copy.js
