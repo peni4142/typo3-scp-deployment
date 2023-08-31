@@ -5,7 +5,10 @@ These extensions is wrapping the SCP action of appleboy for TYPO3 extensions. ht
 It only works for linux.
 
 
-This action is for TYPO3 extensions. This action copy the whole repo except the .git and .github directories to the speciefied path. So the eextension root path should also be the repository root path. What basically was my use-case for this extension.
+This action is for TYPO3 extensions. This action copy the whole repo except the .git and .github directories to the speciefied path. So the extension root path should also be the repository root path. What basically was my use-case for this extension.
+
+If you have some improvements, feel free to contribute by PR.
+
 
 ## Example how to use
 
