@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: deploy extension to production server
-      uses:  peni4142/typo3-scp-deployment@master
+      uses:  peni4142/typo3-scp-deployment@main
       with:
         host: "Hello, World!"
         target_path: "Hello, World!"
