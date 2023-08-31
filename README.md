@@ -1,5 +1,10 @@
 # typo3-scp-deployment
 
+These extensions is wrapping the SCP action of appleboy for TYPO3 extensions. https://github.com/appleboy/scp-action@master
+
+This action is for TYPO3 extensions. This action copy the whole extension
+
+## Example how to use
 
 ```
 name: Typo3_Extension
@@ -17,9 +22,6 @@ jobs:
       CI: false
 
     steps:
-    - name: install bash
-      uses: actions/checkout@v3
-
     - name: deploy extension to production server
       uses: peni4142/typo3-scp-deployment@main
       with:

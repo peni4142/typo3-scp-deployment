@@ -3,7 +3,7 @@ const path = require("path");
 
 const ROOT_PATH = "./";
 const DEPLOYMENT_PATH = "./deployment";
-const IGNORING_PATHS = [".git/", ".github/"];
+const IGNORING_PATHS = [".git/", ".github/", ".typo3-scp-deployment-template/"];
 
 function readPath(path, onFile, onDirectory) {
   const lstat = fs.lstatSync(path);

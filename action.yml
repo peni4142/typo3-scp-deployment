@@ -26,7 +26,7 @@ runs:
     uses: actions/checkout@v3
     with:
       repository: peni4142/typo3-scp-deployment
-      path: 'template'
+      path: 'typo3-scp-deployment-template'
       ref: 'main'
 
   - name: create deployment
