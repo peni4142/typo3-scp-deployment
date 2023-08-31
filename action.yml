@@ -31,7 +31,7 @@ runs:
 
   - name: create deployment
     shell: bash
-    run: node ./template/complex-copy.js
+    run: node ./typo3-scp-deployment-template/complex-copy.js
 
   - name: copy extension to production server
     uses:  appleboy/scp-action@master
