@@ -29,7 +29,7 @@ runs:
     shell: bash
     run: node ./template/complex-copy.js
 
-  - name: deploy extension to production server
+  - name: copy extension to production server
     uses:  appleboy/scp-action@master
     with:
       host: ${{ inputs.host }}
